@@ -1,0 +1,12 @@
+<!-- 写页面结构的地方 -->
+<view class="container">
+  <navigator url="/pages/detail/index">
+    <text class="title">
+      {{title}}
+    </text>
+  </navigator>
+  <text class="title">我的DreamCar 宝马8系</text>
+  
+  <image src="../img/屏幕截图 2022-11-12 150716.png" mode="" class="image"/>
+  
+</view>
