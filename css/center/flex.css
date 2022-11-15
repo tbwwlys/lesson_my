@@ -1,0 +1,9 @@
+.wp {
+    /* display: inline; 不能直接设置 width 和 height*/
+    /* display: inline-block; */
+    /* 新的布局可能 弹性布局 */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
