@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rem html 根元素的fontSize */
+        /* em */
+        .box {
+            /* font-size */
+            width: 5em;
+            height: 5em;
+            background-color: pink;
+            /* transition 过渡 animation 动画 过渡动画 */
+            /* transition: width 1s; */
+            /* 声明animation 属性 animation-name duration    */
+            animation: grow 1s;
+        }
+        /*定义 keyframs 关键帧 分配时间*/
+        @keyframes grow {
+            0% {
+                width: 5em;
+
+            }
+            75% {
+                width: 6em;
+            }
+            100% {
+                width: 10em;
+            }
+        }
+        .ani {
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <script>
+        setTimeout(() => {
+            const oBox = document.querySelector('.box');
+        oBox.style.width = '10em';
+        },5000)
+        
+    </script> -->
+    <div class="box ani">
+        12345678
+    </div> 
+</body>
+</html>
