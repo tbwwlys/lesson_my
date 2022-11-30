@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -37,3 +38,44 @@
 
 
 
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+.wp {
+    width: 300px;
+    height: 300px;
+    /* css调试技巧 */
+    background-color: pink;
+    /* 会影响盒子布局 文档流 */
+    /* border: 1px solid green; */
+}
+.box {
+    background-color: green;
+    
+}
+.box.size {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> master

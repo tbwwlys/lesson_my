@@ -2,7 +2,11 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
+<<<<<<< HEAD
     "/pages/detail/index"
+=======
+    "pages/detail/index"
+>>>>>>> master
   ],
   "window":{
     "backgroundTextStyle":"light",

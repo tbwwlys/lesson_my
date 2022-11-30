@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,4 +101,108 @@
     })
     </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script src="./1.js"></script>
+    <script src="./2.js"></script>
+     -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>名字</th>
+                <th>家乡</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>谢广坤</td>
+                <td>吉安象牙山</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>刘能</td>
+                <td>宜春象牙山</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>赵四</td>
+                <td>抚州象牙山</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">相亲相爱一家人！</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <form name="studentForm">
+        <div>
+            <label for="numInput">序号</label>
+            <input type="number" placeholder="请输入数字" id="numInput" name="studentID" required/>
+        </div>
+        <div>
+            <label for="numName">姓名</label>
+            <input type="text" placeholder="请输入姓名" id="nameInput" name="studentName" required/>
+        </div>
+        <div>
+            <label for="hometownInput">序号</label>
+            <input type="text" placeholder="请输入家乡" id="hometownInput" name="studentHometown" required/>
+        </div>
+        <div>
+            <button type="submit">提交</button>
+        </div>
+    </form>
+    <script>
+    const students = [
+        {
+            id: 4,
+            name: "胡毅辉",
+            hometown: '抚州'
+        },
+        {
+            id: 5,
+            name: "付宇",
+            hometown: '宜春'
+        },
+    ]
+    const oTBody = document.querySelector('tbody');
+    function renderStudent() {
+        students.forEach(function(student) {
+            oTBody.innerHTML += `
+            <tr>
+                <td>${student.id}</td>
+                <td>${student.name}</td>
+                <td>${student.hometown}</td>
+            </tr>`
+        })
+    }
+    function addStudent() {
+        
+    }
+    renderStudent();
+    document.forms['studentForm'].addEventListener('submit', function(event){
+        event.preventDefault();
+        const oStudent = {
+            id: this["studentID"].value,
+            name: this["studentName"].value,
+            hometown: this["studentHometown"].value,
+        }
+        students.push(oStudent);
+        // oTBody.innerHTML = '';
+        renderStudent();
+    })
+    </script>
+</body>
+>>>>>>> master
 </html>

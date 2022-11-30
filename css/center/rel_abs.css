@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .wp {
     position: relative;
 }
@@ -8,4 +9,16 @@
     transform: translate(-50%, -50%)
     /* margin-left: -50px;
     margin-top: -50px; */
+=======
+.wp {
+    position: relative;
+}
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+    /* margin-left: -50px;
+    margin-top: -50px; */
+>>>>>>> master
 }

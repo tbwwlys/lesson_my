@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 变量的作用域
 var name = '新';
 function func() {
@@ -11,4 +12,19 @@ function func() {
     
 }
 func();
+=======
+// 变量的作用域
+var name = '新';
+function func() {
+    var y = 1;
+    var name = 'z';
+    {
+        let name = '喜';
+        let x = 1;
+        console.log(x,y)
+    }
+    
+}
+func();
+>>>>>>> master
 console.log(y)
